@@ -1,11 +1,11 @@
 package components;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 //added component with name "laptop" pointing for qualifier
-@Component("Laptop")
-
+@Component
 @Primary
 public class Laptop extends Product{
     private int ram;

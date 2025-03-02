@@ -1,8 +1,10 @@
 package components;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 //added component with name "smartphone" pointing for qualifier
-@Component("Smartphone")
+@Component
+@Qualifier("smartphone")
 public class Smartphone extends Product {
     private String camera;
     private int memory;
