@@ -13,7 +13,7 @@ public class ProductManager {
 //        this.product = product;
 //    }
     //comment it for show how work lazy annotation
-    public ProductManager(@Qualifier("Laptop") Product product){
+    public ProductManager( Product product){
         this.product = product;
     }
 
