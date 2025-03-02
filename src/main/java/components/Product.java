@@ -1,6 +1,9 @@
 package components;
 
-public class Product {
+import org.springframework.stereotype.Component;
+
+@Component
+public abstract class Product {
     private int productId;
     private String productName;
     private double productPrice;
@@ -25,4 +28,5 @@ public class Product {
     public double getProductPrice() {
         return productPrice;
     }
+    public abstract void specialFeature();
 }
